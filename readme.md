@@ -67,6 +67,10 @@ To remove blip information, use the `RemoveBlipInfo` export:
 exports['kBlipInfo']:RemoveBlipInfo(blip)
 ```
 
+### Custom Images
+
+You can stream custom images to use as icons. To do so, you need a .ytd file with your images. The images should be in a .dds file format with DXT1 compression and no mipmaps (for non-transparent Images). The dict is now the name of the .ytd file and the name is the name of the .dds file, both without the extension. There is a streamed .ytd file included, you can use that or add your own.
+
 ### Configuration
 
 In the config.lua file you can add some blips with infos to be created for you by the script so you don't have to create everything through exports from other scripts. Take a look at the example.lua file for more info on the components.
