@@ -67,7 +67,7 @@ local info = {
             type = "social",
             title = "Creator",
             value = GetPlayerName(PlayerId()), -- can be any name/string
-            crewTag = "Kypo",
+            crewTag = "@Kypo", -- @ is R* icon, you can use it or not.
             isSocialClubName = false -- rockstar icon, crew tag should be false if using.
         }, -- if someone wants to pr crew tags, go for it.
         

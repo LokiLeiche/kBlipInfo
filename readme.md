@@ -1,5 +1,9 @@
 # kBlipInfo
 
+<p align="center">
+  <img src="images/preview.png" alt="kBlipInfo Preview">
+</p>
+
 kBlipInfo is a FiveM script that allows you to create and manage detailed blip information on the map. This script provides a way to display custom information for blips, including titles, icons, descriptions, and reward texts.
 
 ## Features
