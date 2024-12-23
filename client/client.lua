@@ -89,7 +89,7 @@ local function HandleMissionCreatorBlips()
                     elseif component.type == 3 then
                         CallScaleformMethodOnFrontend("SET_DATA_SLOT", 1, i-1, 65, i-1, component.type, 0, 1,
                             component.title or "", component.value or "",
-                            "",
+                            component.crewTag and ("___" .. component.crewTag) or "",
                             component.isSocialClubName or false)
                     elseif component.type == 4 then
                         CallScaleformMethodOnFrontend("SET_DATA_SLOT", 1, i-1, 65, i-1, component.type, 0, 0)
