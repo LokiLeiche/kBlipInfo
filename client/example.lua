@@ -14,7 +14,7 @@
     "divider"    = Horizontal line separator
     "description"= Multi-line text block
     
---]]
+
 
 
 local blip = AddBlipForCoord(-123.6383, 562.4001, 196.0399)
@@ -100,3 +100,5 @@ local info = {
 
 
 exports['kBlipInfo']:UpdateBlipInfo(blip, info)
+
+--]]
