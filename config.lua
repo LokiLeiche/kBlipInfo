@@ -16,6 +16,13 @@ Config.Blips = { -- you can create more blips with the same pattern
             setTitle = "Mountain Drift Circuit",
             setType = 0,
             setTexture = { dict = "pause_map", name = "pm_series_drift" },
+            --[[ You can also use DUI textures 
+            setTexture = {
+                url = "https://i.pinimg.com/originals/89/5c/e7/895ce751ba0379700381d17a67086931.gif",  -- image URL
+                width = 498,    -- specify custom width (should be width of the image)
+                height = 427    -- specify custom height (should be height of the image)
+            },
+            ]]
             setCashText = "$25,000",
             setApText = "2500",
             setRpText = "5000",

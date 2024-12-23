@@ -29,7 +29,7 @@ EndTextCommandSetBlipName(blip)
 
 local info = {
     setTitle = "Mountain Drift Circuit",  -- Header title
-    setType = 3,                         -- Rockstar Verified style
+    setType = 1,                         -- Rockstar Verified style
 
 
     setTexture = {                       -- Custom image
