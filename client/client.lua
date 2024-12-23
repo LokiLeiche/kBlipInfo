@@ -48,6 +48,17 @@ local function RemoveBlipInfo(blipHandle)
     return false
 end
 
+local function RequestTextureIfNeeded(textureDict)
+    if textureDict and not HasStreamedTextureDictLoaded(textureDict) then
+        RequestStreamedTextureDict(textureDict, true)
+        while not HasStreamedTextureDictLoaded(textureDict) do
+            Wait(0)
+        end
+        return true
+    end
+    return false
+end
+
 local function HandleMissionCreatorBlips()
     if not IsFrontendReadyForControl() then return end
 
@@ -69,6 +80,10 @@ local function HandleMissionCreatorBlips()
     if curHoveredBlipHandle ~= LastHoveredBlipHandle and DoesBlipExist(curHoveredBlipHandle) and IsMissionCreatorBlip(curHoveredBlipHandle) then
         local blipInfo = BlipInfoStorage[curHoveredBlipHandle]
         if blipInfo then
+            if blipInfo.textureDict then
+                RequestTextureIfNeeded(blipInfo.textureDict)
+            end
+
             TakeControlOfFrontend()
             CallScaleformMethodOnFrontend("SHOW_COLUMN", 65, 1, true)
 
