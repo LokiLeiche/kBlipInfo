@@ -5,8 +5,8 @@ description 'Blip info helper'
 version '1.0.0'
 
 client_scripts {
+    'config.lua',
     'client/builder.lua',
     'client/client.lua',
-    'client/example.lua'
 }
 
