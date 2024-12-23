@@ -124,6 +124,20 @@ end
 
 
 CreateThread(function()
+    for k, v in pairs(Config.Blips) do
+        local blip = AddBlipForCoord(v.position.x, v.position.y, v.position.z)
+        SetBlipSprite(blip, v.blipId)
+        SetBlipDisplay(blip, v.displayType)
+        SetBlipScale(blip, v.scale)
+        SetBlipColour(blip, v.blipColor)
+        SetBlipAsShortRange(blip, v.shortRange)
+        BeginTextCommandSetBlipName("STRING")
+        AddTextComponentString(v.label)
+        EndTextCommandSetBlipName(blip)
+
+        UpdateBlipInfo(blip, v.blipInfo)
+    end
+
     while true do
         HandleMissionCreatorBlips()
         Wait(IsPauseMenuActive() and 0 or 1000)

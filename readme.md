@@ -40,7 +40,7 @@ EndTextCommandSetBlipName(blip)
 
 local info = {
     setTitle = "Mountain Drift Circuit",
-    setType = 3,
+    setType = 1,
     setTexture = { dict = "pause_map", name = "pm_series_drift" },
     setCashText = "$25,000",
     setApText = "2500",
@@ -69,7 +69,7 @@ exports['kBlipInfo']:RemoveBlipInfo(blip)
 
 ### Configuration
 
-The script does not require any additional configuration. Simply add your blip information as shown in the example above.
+In the config.lua file you can add some blips with infos to be created for you by the script so you don't have to create everything through exports from other scripts. Take a look at the example.lua file for more info on the components.
 
 ### License
 
