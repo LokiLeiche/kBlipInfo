@@ -15,7 +15,7 @@ Config.Blips = { -- you can create more blips with the same pattern
         blipInfo = { -- see client/example.lua and reamdme.md for more information
             setTitle = "Mountain Drift Circuit",
             setType = 0,
-            setTexture = { dict = "dyn_mp_31", name = "dyn_mp_31" },
+            setTexture = { dict = "pause_map", name = "pm_series_drift" },
             setCashText = "$25,000",
             setApText = "2500",
             setRpText = "5000",
