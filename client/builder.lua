@@ -86,7 +86,7 @@ function BlipInfo.create(config)
                     type = 3,
                     title = comp.title,
                     value = comp.value,
-                    crewTag = comp.crewTag,
+                    crew = comp.crew,
                     isSocialClubName = comp.isSocialClubName
                 })
             end
