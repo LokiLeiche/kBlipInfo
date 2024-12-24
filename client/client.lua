@@ -154,3 +154,6 @@ end)
 exports('CreateBlipBuilder', CreateBlipBuilder)
 exports('UpdateBlipInfo', UpdateBlipInfo)
 exports('RemoveBlipInfo', RemoveBlipInfo)
+exports('GetBlipInfo', function(blipHandle)
+    return BlipInfoStorage[blipHandle] or false
+end)
