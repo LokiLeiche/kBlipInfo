@@ -15,7 +15,7 @@ Config.Blips = { -- you can create more blips with the same pattern
         blipInfo = { -- see client/example.lua and reamdme.md for more information
             setTitle = "Mountain Drift Circuit",
             setType = 0,
-            setTexture = { dict = "pause_map", name = "pm_series_drift" },
+            setTexture = { dict = "kblipinfo", name = "kcore" },
             --[[ You can also use DUI textures 
             setTexture = {
                 url = "https://i.pinimg.com/originals/89/5c/e7/895ce751ba0379700381d17a67086931.gif",  -- image URL
