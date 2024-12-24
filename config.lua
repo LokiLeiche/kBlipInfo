@@ -43,7 +43,7 @@ Config.Blips = { -- you can create more blips with the same pattern
                 {
                     type = "social",
                     title = "Creator",
-                    value = "Kypos x Loki x Jordanpk(EGG)", 
+                    value = "Kypos x Loki x Jordanpkl(EGG)", 
                     isSocialClubName = false, -- show rockstar icon next to the name
                     crew = {
                         tag = "KYPO",
