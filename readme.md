@@ -1,6 +1,9 @@
 # kBlipInfo
 [Discord for help](https://discord.gg/5Da9eCfEec)
 <p align="center">
+  <img src="images/logo.png" alt="kBlipInfo Logo">
+</p>
+<p align="center">
   <img src="images/preview.png" alt="kBlipInfo Preview">
 </p>
 
