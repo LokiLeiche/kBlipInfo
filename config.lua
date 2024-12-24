@@ -43,7 +43,7 @@ Config.Blips = { -- you can create more blips with the same pattern
                 {
                     type = "social",
                     title = "Creator",
-                    value = GetPlayerName(PlayerId()), 
+                    value = "Kypos x Loki", 
                     isSocialClubName = false, -- show rockstar icon next to the name
                     crewTag = "kCore"
                 },
