@@ -1,6 +1,5 @@
 BlipInfo = {}
 
-
 function BlipInfo.create(config)
     local data = {}
     
@@ -14,11 +13,33 @@ function BlipInfo.create(config)
     
     if config.setTexture then
         if type(config.setTexture) == "string" then
-            data.textureDict = config.setTexture
-            data.textureName = config.setTexture
+            if config.setTexture:match("^https?://") then
+                local textureData = CreateDuiTexture(config.setTexture) -- draw 
+                if textureData then
+                    data.textureDict = textureData.dict
+                    data.textureName = textureData.name
+                    data.isDuiTexture = true
+                end
+            else
+                data.textureDict = config.setTexture
+                data.textureName = config.setTexture
+            end
         elseif type(config.setTexture) == "table" then
-            data.textureDict = config.setTexture[1] or config.setTexture.dict
-            data.textureName = config.setTexture[2] or config.setTexture.name
+            if config.setTexture.url then
+                local textureData = CreateDuiTexture({ -- draw 
+                    url = config.setTexture.url,
+                    width = config.setTexture.width,
+                    height = config.setTexture.height
+                })
+                if textureData then
+                    data.textureDict = textureData.dict
+                    data.textureName = textureData.name
+                    data.isDuiTexture = true
+                end
+            else
+                data.textureDict = config.setTexture[1] or config.setTexture.dict
+                data.textureName = config.setTexture[2] or config.setTexture.name
+            end
         end
     end
     
@@ -74,5 +95,4 @@ function BlipInfo.create(config)
 
     return data
 end
-
 return BlipInfo

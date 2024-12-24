@@ -14,7 +14,7 @@
     "divider"    = Horizontal line separator
     "description"= Multi-line text block
     
---]]
+
 
 
 local blip = AddBlipForCoord(-123.6383, 562.4001, 196.0399)
@@ -29,7 +29,7 @@ EndTextCommandSetBlipName(blip)
 
 local info = {
     setTitle = "Mountain Drift Circuit",  -- Header title
-    setType = 3,                         -- Rockstar Verified style
+    setType = 1,                         -- Rockstar Verified style
 
 
     setTexture = {                       -- Custom image
@@ -100,3 +100,5 @@ local info = {
 
 
 exports['kBlipInfo']:UpdateBlipInfo(blip, info)
+
+--]]

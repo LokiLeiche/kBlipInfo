@@ -39,14 +39,20 @@ local function UpdateBlipInfo(blipHandle, config)
     end
     return false
 end
+
 local function RemoveBlipInfo(blipHandle)
     if BlipInfoStorage[blipHandle] then
+        local blipInfo = BlipInfoStorage[blipHandle]
+        if blipInfo.isDuiTexture and blipInfo.textureName then
+            CleanupDuiTexture(blipInfo.textureName)
+        end
         BlipInfoStorage[blipHandle] = nil
         SetBlipAsMissionCreatorBlip(blipHandle, false)
         return true
     end
     return false
 end
+
 
 local function RequestTextureIfNeeded(textureDict)
     if textureDict and not HasStreamedTextureDictLoaded(textureDict) then
