@@ -1,4 +1,5 @@
 local DuiTextures = {}
+local blipDuiTextureUID = 1
 
 function CreateDuiTexture(texture)
     if not texture then return nil end
@@ -15,7 +16,8 @@ function CreateDuiTexture(texture)
     
     if not url then return nil end
 
-    local textureName = "dui_blip_tex_" .. GetGameTimer()
+    local textureName = "dui_blip_tex_" .. blipDuiTextureUID
+    blipDuiTextureUID = blipDuiTextureUID +1
     local txdName = textureName .. "_dict"
     local runtimeTxd = CreateRuntimeTxd(txdName)
     local duiObject = CreateDui(url, width, height)
