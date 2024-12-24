@@ -45,7 +45,13 @@ Config.Blips = { -- you can create more blips with the same pattern
                     title = "Creator",
                     value = "Kypos x Loki x Jordanpk(EGG)", 
                     isSocialClubName = false, -- show rockstar icon next to the name
-                    crewTag = "kCore"
+                    crew = {
+                        tag = "KCORE",
+                        isPrivate = true, -- false triangle shape, true square shape
+                        isRockstar = true, -- shows R* icon
+                        lvl = 3, -- isPrivate needs to be true, values from 0-5, 0 is full bar, 5 is no bar
+                        lvlColor = "#00FFBF" -- Color of the lvl bar
+                    }
                 },
                 {
                     type = "divider"
