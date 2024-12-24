@@ -81,7 +81,7 @@ local info = {
                 lvl = 3, -- isPrivate needs to be true, values from 0-5, 0 is full bar, 5 is no bar
                 lvlColor = "#00FFBF" -- Color of the lvl bar
             }
-        }, -- if someone wants to pr crew tags, go for it.
+        },
 
         -- Divider Component
         {
