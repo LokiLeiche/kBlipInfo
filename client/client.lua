@@ -108,7 +108,7 @@ local function HandleMissionCreatorBlips()
                             component.title or "", component.value or "",
                             component.iconIndex or 0, component.iconHudColor or 0, component.isTicked or false)
                     elseif component.type == 3 then
-                        local crewTag = (component.crew.isPrivate and "(" or ".") .. (component.crew.isRockstar and "*" or ".") .. (component.crew.lvl and component.crew.lvl or "") .. (component.crew.tag and component.crew.tag or "") .. (component.crew.lvlColor and component.crew.lvlColor or "")
+                        local crewTag = (component.crew.isPrivate and "(" or ".") .. (component.crew.isRockstar and "*" or ".") .. (component.crew.lvl and component.crew.lvl or ".") .. (component.crew.tag and component.crew.tag or "") .. (component.crew.lvlColor and component.crew.lvlColor or "")
                         CallScaleformMethodOnFrontend("SET_DATA_SLOT", 1, i-1, 65, i-1, component.type, 0, 1,
                             component.title or "", component.value or "",
                             crewTag,
