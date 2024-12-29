@@ -85,7 +85,7 @@ local info = {
 
         -- Divider Component
         {
-            type = "divider"             --Basically just a lin
+            type = "divider"             --Basically just a line
         },
 
         {
